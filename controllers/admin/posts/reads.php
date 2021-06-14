@@ -3,7 +3,7 @@
 
 function reads($f3){
     require_once('setting.php');
-    $posts = $f3->get('DB')->exec('SELECT * FROM posts LIMIT ?', $setting['adminPostLimit']);
+    $posts = $f3->get('DB')->exec('SELECT * FROM posts ORDER BY date DESC  LIMIT ?', $setting['adminPostLimit']);
 
     $f3->mset([
         'appName'=>$setting['siteTitle'], 
