@@ -7,7 +7,7 @@ function create($f3){
 
     $id = uniqid();
     $title = $f3->get('POST.title');
-    $content = $f3->get('POST.content');
+    $content = $_POST[ 'content' ];
     $thumb = $f3->get('POST.thumb');
     $category = $f3->get('POST.category');
     $date = $f3->get('POST.datetime');
