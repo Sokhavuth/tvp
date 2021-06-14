@@ -17,7 +17,7 @@
                     <option>ជាតិ</option>
                     <option>អន្តរជាតិ</option>
                 </select>
-                <input type='datetime-local' value='<?php echo $datetime ?>' name='datetime' required />
+                <input type='datetime-local' value='' name='datetime' required />
                 <input type='submit' value='បញ្ជូន' />
             </div>
             <input type='hidden' name='entries' required />
