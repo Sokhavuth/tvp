@@ -6,13 +6,13 @@ function create($f3){
     table($f3);
 
     $id = uniqid();
-    $title = $f3->get('POST.title');
-    $content = $_POST[ 'content' ];
-    $thumb = $f3->get('POST.thumb');
-    $category = $f3->get('POST.category');
-    $date = $f3->get('POST.datetime');
-    $video = $f3->get('POST.entries');
-    $author = $f3->get('SESSION.email');
+    $title = addslashes($f3->get('POST.title'));
+    $content = addslashes($f3->get('POST.content'));
+    $thumb = addslashes($f3->get('POST.thumb'));
+    $category = addslashes($f3->get('POST.category'));
+    $date = addslashes($f3->get('POST.datetime'));
+    $video = addslashes($f3->get('POST.entries'));
+    $author = addslashes($f3->get('SESSION.email'));
 
     $db = $f3->get('DB');
 
