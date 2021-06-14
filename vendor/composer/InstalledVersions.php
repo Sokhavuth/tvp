@@ -27,24 +27,24 @@ class InstalledVersions
 private static $installed = array (
   'root' => 
   array (
-    'pretty_version' => '1.0.0+no-version-set',
-    'version' => '1.0.0.0',
+    'pretty_version' => 'dev-master',
+    'version' => 'dev-master',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
-    'name' => 'bcosca/fatfree',
+    'reference' => 'df2afb47bdf04e40e68c32d78fc75acced9749f9',
+    'name' => '__root__',
   ),
   'versions' => 
   array (
-    'bcosca/fatfree' => 
+    '__root__' => 
     array (
-      'pretty_version' => '1.0.0+no-version-set',
-      'version' => '1.0.0.0',
+      'pretty_version' => 'dev-master',
+      'version' => 'dev-master',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => 'df2afb47bdf04e40e68c32d78fc75acced9749f9',
     ),
     'bcosca/fatfree-core' => 
     array (
