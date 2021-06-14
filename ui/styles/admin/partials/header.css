@@ -1,0 +1,35 @@
+.Header{
+    background: var(--background-dark);
+    padding: 10px 0;
+}
+
+.Header .wrapper{
+    display: grid;
+    grid-template-columns: 25% auto 25%;
+    align-items: center;
+}
+
+.Header .wrapper .logo{
+    font: 30px/1.5 Anton, Moul;
+}
+
+.Header .wrapper .search{
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+.Header .wrapper .search input{
+    padding: 2px 10px;
+    font: var(--body-font);
+}
+
+.Header .wrapper .logout{
+    text-align: right;
+    font-size: 18px;
+}
+
+.Main{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 25% 75%;
+}

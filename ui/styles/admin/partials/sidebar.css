@@ -1,0 +1,14 @@
+.Sidebar .wrapper{
+    display: grid;
+    grid-template-columns: 15% auto;
+    grid-gap: 10px;
+    align-items: center;
+}
+
+.Sidebar .wrapper a img{
+    width: 100%;
+}
+
+.Sidebar .wrapper .title{
+    font: 18px/1.5 Oswald, Bayon;
+}
