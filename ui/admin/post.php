@@ -41,9 +41,11 @@
         </div>
 
         <table class='viddata'></table>
-
+        
     </div>
 </section>
 <script src="ui/scripts/ckeditor/config.js"></script>
+
+<?php require('ui/admin/listing.php') ?>
 
 <?php require('ui/footer.php') ?>

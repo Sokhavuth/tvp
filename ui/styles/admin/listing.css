@@ -1,0 +1,68 @@
+.List .info{
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    background: var(--background);
+}
+
+.List .wrapper{
+    display: grid;
+    grid-template-columns: calc(50% - 5px) calc(50% - 5px);
+    grid-gap: 10px;
+    margin: 10px 0;
+}
+
+.List .wrapper .item{
+    background: var(--background);
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    grid-gap: 10px;
+    align-items: center;
+}
+
+.List .wrapper .item .thumb{
+    position: relative;
+    padding-top: 56.25%;
+    overflow: hidden;
+}
+
+.List .wrapper .item .thumb img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+.List .wrapper .item .thumb .playicon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 28%;
+    min-height: auto;
+}
+
+.List .wrapper .item .edit{
+    text-align: right;
+    padding: 5px;
+}
+
+.List .wrapper .item .edit img{
+    width: 35px;
+    visibility: hidden;
+}
+
+.List .wrapper .item:hover .edit img{
+    visibility: visible;
+}
+
+.List .paginate{
+    text-align: center;
+    background: var(--background);
+    padding: 5px 0 0;
+}
+
+.List .paginate img:hover{
+    cursor: pointer;
+}

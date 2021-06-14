@@ -16,8 +16,8 @@ function create($f3){
 
     $db = $f3->get('DB');
 
-    $sql = "INSERT INTO posts (id,title,content,thumb,category,date,video,author) 
-            VALUES('$id','$title','$content','$thumb','$category','$date','$video','$author')";
+    $sql = "INSERT INTO posts (id, title, content, thumb, category, date, video, author) 
+    VALUES('$id', '$title', '$content', '$thumb', '$category', '$date', '$video', '$author')";
 
     $db->exec($sql);
 
