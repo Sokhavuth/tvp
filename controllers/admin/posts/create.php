@@ -14,12 +14,10 @@ function create($f3){
     $video = addslashes($f3->get('POST.entries'));
     $author = addslashes($f3->get('SESSION.email'));
 
-    $db = $f3->get('DB');
-
     $sql = "INSERT INTO posts (id, title, content, thumb, category, date, video, author) 
     VALUES('$id', '$title', '$content', '$thumb', '$category', '$date', '$video', '$author')";
 
-    $db->exec($sql);
+    $f3->get('DB')->exec($sql);
 
     $f3->reroute('./admin_post');
 }

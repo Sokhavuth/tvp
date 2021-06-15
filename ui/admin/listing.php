@@ -9,7 +9,11 @@
             <div class='item'>
                 <div class='thumb'>
                     <a href='./<?php echo $route ?>/<?php echo $item["id"] ?>'>
-                        <img src="ui/images/news.jpg" />
+                        <?php if($item["thumb"]){ ?>
+                            <img src="<?php echo $item['thumb'] ?>" />
+                        <?php }else{ ?>
+                            <img src='ui/images/no-image.png' />
+                        <?php } ?>
                         
                         <?php if($item["video"]){ ?>
                             <img class="playicon" src="ui/images/play.png" />

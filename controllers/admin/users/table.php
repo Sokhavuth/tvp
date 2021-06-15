@@ -19,6 +19,6 @@ function table($f3){
     $user = $f3->get('DB')->exec('SELECT * FROM users LIMIT 1');
     
     if(!$user){
-        $f3->get('DB')->exec('INSERT INTO users (email, password) VALUES("root@tv.com", "password")');
+        $f3->get('DB')->exec('INSERT INTO users (email, password) VALUES("xxxx@xxx.xxxx", "xxxxxx")');
     }
 }
