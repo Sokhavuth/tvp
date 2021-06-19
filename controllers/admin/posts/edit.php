@@ -15,7 +15,7 @@ function edit($f3, $id){
     $f3->mset([
         'appName'=>$setting['siteTitle'], 
         'title'=>'ទំព័រកែប្រែ', 
-        'post'=>$post,
+        'post'=>$post
     ]);
 
     $view = new View;

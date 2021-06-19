@@ -10,7 +10,7 @@
     <div class='Content'>
         <form action='./admin_post' method='post'>
             <input type='text' name='title' placeholder='ចំណងជើង' required />
-            <textarea name='content' id='editor'><?php $GLOBALS['post']['content'] ?></textarea>
+            <textarea name='content' id='editor'><?php $post['content'] ?></textarea>
             <div class='wrapper'>
                 <input type='text' name='thumb' required value='' />
                 <select name='category' required>
